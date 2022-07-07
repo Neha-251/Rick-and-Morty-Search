@@ -1,0 +1,35 @@
+
+
+.searchMain_mainDiv{
+    height: 50%;
+    width: 35%;
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: auto;
+}
+
+.searchIcon{
+    background-color: white;    
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 2px;
+    z-index: 1;
+    position: absolute;
+    color: grey;
+    font-weight: 700;
+}
+.searchbar_mainDiv input{
+    margin: auto;
+    height: 40px;
+    width: 70%;
+    border: none;
+    padding: 9px 70px;
+    outline: none;
+    margin-top: -20px;
+    font-size: 17px;
+    background-color: white;
+    /* z-index: 1;
+    position: fixed; */
+}
+
+

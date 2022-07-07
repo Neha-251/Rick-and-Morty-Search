@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  
+  margin: 0;
+  /* padding: 50px; */
+}
+
+*{
+  background-color: #f5f6f8;
+  color: black;
+}
+
+h1{
+  font-size: 55px;
+  margin: 100px auto;
+}
+
+::-webkit-scrollbar{
+  background-color: transparent;
+  width: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(79, 78, 78);
+  border-radius: 20px;
+}
+

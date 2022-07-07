@@ -1,0 +1,14 @@
+
+.detailsCard_mainDiv{
+    position: absolute;
+    z-index: 2;
+    padding: 50%;
+}
+
+.details_profile{
+    background-color: white;
+    height: 300px;
+    width: 300px;
+    border-radius: 5px;
+
+}
