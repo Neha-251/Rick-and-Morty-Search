@@ -14,7 +14,6 @@ export const CardContextProvider = ({children}) => {
 
 
     const [isFetching, setIsFetching] = useState(false);
-    console.log('currPage', currPage)
     
 
     const handleClicked = (data) => {

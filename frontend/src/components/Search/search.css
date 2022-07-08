@@ -16,7 +16,7 @@
 .searchMain_mainDiv{
     height: 55%;
     width: 85%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     margin: auto;
     left: 32%;
@@ -39,7 +39,7 @@
     background-color: white;    
     font-size: 20px;
     margin-left: 4%;
-    margin-top: 2%;
+    margin-top: 2.2%;
     z-index: 1;
     position: absolute;
     color: rgba(165, 165, 165, 0.281);
