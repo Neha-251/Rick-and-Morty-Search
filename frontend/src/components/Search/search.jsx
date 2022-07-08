@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useState, useCallback, useMemo, useContext } from "react";
-import { IoIosSearch } from "react-icons/io";
+import { MdSearch } from "react-icons/md";
 import {debounce} from "lodash";
 import {cardContext} from "../context/cardContext"
 import "./search.css";
@@ -13,7 +13,7 @@ export const SearchMain = () => {
     const [data, setData] = useState([])
     const [totalPages, setTotalPages] = useState(0);
     const [name, setName] = useState("");
-
+    const [err, setErr] = useState("");
     const {isVisible, currPage, setCurrPage, isFetching, setIsFetching} = useContext(cardContext)
  
     
@@ -22,24 +22,30 @@ export const SearchMain = () => {
 
         axios.get(`https://rickandmortyapi.com/api/character/?name=${name}&page=${currPage}`)
             .then(res => {
-              
+                setErr("")
                 let newData = res.data.results
                 
                 setData(newData)
                 setTotalPages(res.data.info.count)
-            }).catch(err => console.error(err))
+            }).catch(err => {
+                setErr("Sorry! No Result Found")
+                console.error(err)
+            })
     }
 
     const getDataAgain = () => {
 
         axios.get(`https://rickandmortyapi.com/api/character/?name=${name}&page=${currPage}`)
             .then(res => {
-              
+                setErr("")
                 let newData = res.data.results
                 let arr = data.concat(newData)
                 setData(arr)
                 setTotalPages(res.data.info.count)
-            }).catch(err => console.error(err))
+            }).catch(err => {
+                setErr("Sorry! No Result Found")
+                console.error(err)
+            })
     }
 
     const getDataHandler = useCallback( debounce(()=> {
@@ -70,8 +76,9 @@ export const SearchMain = () => {
     return (
         <div className="searchMain_mainDiv">
             <div className="searchbar_mainDiv">
-                <IoIosSearch className="searchIcon" />
+                <MdSearch className="searchIcon" />
                 <input type="text" placeholder="Search for a contact" onChange={(e)=>{setName(e.target.value); setCurrPage(1) }} />
+                <div>{err}</div>
             </div>
             <BasicUserCard  data={data} />
         </div>

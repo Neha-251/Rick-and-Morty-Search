@@ -1,35 +1,61 @@
 
 
 .searchMain_mainDiv{
-    height: 50%;
+    height: 55%;
     width: 35%;
     /* border: 1px solid red; */
     text-align: center;
     margin: auto;
+    left: 32%;
+    /* position: absolute; */
+}
+
+@media only screen and (min-width: 275px) and (max-width: 475px) {
+    
+
+.searchMain_mainDiv{
+    height: 55%;
+    width: 85%;
+    border: 1px solid red;
+    text-align: center;
+    margin: auto;
+    left: 32%;
+    /* position: absolute; */
+}
+.searchIcon{
+    background-color: white;    
+    font-size: 20px;
+    left: 12%;
+    top: 28.7%;
+    z-index: 1;
+    /* border: 1px solid red; */
+    position: absolute;
+    color: rgba(165, 165, 165, 0.281);
+    font-weight: 600;
+}
 }
 
 .searchIcon{
     background-color: white;    
     font-size: 20px;
-    margin-left: 45px;
-    margin-top: 2px;
+    margin-left: 4%;
+    margin-top: 2%;
     z-index: 1;
     position: absolute;
-    color: grey;
-    font-weight: 700;
+    color: rgba(165, 165, 165, 0.281);
+    font-weight: 600;
 }
 .searchbar_mainDiv input{
     margin: auto;
     height: 40px;
-    width: 70%;
+    width: 65%;
     border: none;
-    padding: 9px 70px;
+    padding: 4% 17%;
     outline: none;
-    margin-top: -20px;
+    margin-top: 0px;
     font-size: 17px;
     background-color: white;
-    /* z-index: 1;
-    position: fixed; */
+
 }
 
 

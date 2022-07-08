@@ -84,6 +84,7 @@ export const BasicUserCard = (props) => {
     //     })
     // }, [singleCardRef.current, loadMoreCard])
 
+
     return (
         <div className="searchResult_mainDiv" >
             {/* <DetailsUserCard item={item} /> */}
@@ -98,7 +99,7 @@ export const BasicUserCard = (props) => {
                         <div key={el.id} className="profile_div" onClick={() => handleClick(el)}>
 
                             <img src={el.image} className="profile_img" alt="profileimage" />
-                            <p>{el.name}</p>
+                            <p className="el_name">{el.name}</p>
                             <div>
                                 <span className={el.status === "Alive" ? "span_alive" : "span_unknown"}></span>
                                 <p>{el.status} - {el.species}</p>

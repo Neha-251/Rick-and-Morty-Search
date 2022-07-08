@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kulim+Park:wght@200;300;400;600;700&display=swap');
+
 .App {
   text-align: center;
   justify-content: center;
@@ -9,11 +11,13 @@
 *{
   background-color: #f5f6f8;
   color: black;
+  font-family: 'Kulim Park', sans-serif;
 }
 
 h1{
   font-size: 55px;
-  margin: 100px auto;
+  margin: 50px auto;
+  font-weight: 700;
 }
 
 ::-webkit-scrollbar{
