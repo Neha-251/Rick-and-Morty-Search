@@ -4,18 +4,24 @@
 .searchResult_mainDiv{
     /* border: 1px solid; */
     margin: 30px auto;
-    width: 110%;
+    width: 95%;
     height: 270px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     overflow-y: scroll;
+    
+}
+
+.display_block{
+    display: block;
 }
 
 .profile_img{
     height: 40px;
     width: 40px;
     border-radius: 50%;
+    
 }
 
 .profile_div{

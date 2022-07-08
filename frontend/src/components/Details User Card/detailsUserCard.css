@@ -1,14 +1,100 @@
 
+
+
 .detailsCard_mainDiv{
     position: absolute;
     z-index: 2;
-    padding: 50%;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;  
+    
+    background-color: rgba(63, 63, 64, 0.7); 
+}
+
+.cross_symbol{
+    margin-left: 90%;
+    cursor: pointer;
 }
 
 .details_profile{
     background-color: white;
     height: 300px;
-    width: 300px;
-    border-radius: 5px;
+    width: 350px;
+    border-radius: 8px;
+    margin: 20% 35%;
+    padding: 10px;
+}
 
+.details_profile div, .details_profile p{
+    background-color: transparent;
+}
+
+.profile_upperDiv{
+    background-color: white;
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+
+
+.profile_upperDiv > img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.profile_upperDiv > div{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin-top: 20px;
+}
+
+.profile_upperDiv > div > div{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.profile_upperDiv > div > div > p{
+    margin-top: 10px;
+}
+
+
+h4{
+    margin: 0;
+    background-color: transparent;
+}
+
+
+
+.profile_lowerDiv{
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    padding: 5px;
+
+}
+
+.profile_lowerDiv div, .profile_lowerDiv p{
+    background-color: transparent;
+
+}
+
+.grey_p{
+    margin: 0;
+    font-size: 13px;
+    color: grey;
+}
+
+
+.black_p{
+    margin: 0;
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
 }
