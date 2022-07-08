@@ -9,9 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <CardContextProvider>
-    <BrowserRouter>
     <App />
-    </BrowserRouter>
     </CardContextProvider>
   </React.StrictMode>
 );
